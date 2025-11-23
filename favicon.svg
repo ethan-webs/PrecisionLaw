@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="15" fill="#2C3E50" stroke="#3498DB" stroke-width="2"/>
+  
+  <!-- Scales of Justice -->
+  <!-- Base/Stand -->
+  <rect x="15" y="20" width="2" height="8" fill="#ECF0F1"/>
+  
+  <!-- Crossbar -->
+  <rect x="8" y="18" width="16" height="2" fill="#ECF0F1"/>
+  
+  <!-- Left scale -->
+  <path d="M10 18 L6 14 L10 14 L14 14 L10 18" fill="#E74C3C"/>
+  <circle cx="10" cy="12" r="1.5" fill="#ECF0F1"/>
+  
+  <!-- Right scale -->
+  <path d="M22 18 L18 14 L22 14 L26 14 L22 18" fill="#E74C3C"/>
+  <circle cx="22" cy="12" r="1.5" fill="#ECF0F1"/>
+  
+  <!-- Chains -->
+  <line x1="10" y1="18" x2="10" y2="12" stroke="#ECF0F1" stroke-width="1"/>
+  <line x1="22" y1="18" x2="22" y2="12" stroke="#ECF0F1" stroke-width="1"/>
+  
+  <!-- Center chain -->
+  <line x1="16" y1="18" x2="16" y2="20" stroke="#ECF0F1" stroke-width="1"/>
+</svg>

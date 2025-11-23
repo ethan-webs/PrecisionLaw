@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrecisionLaw - Streamline Your Practice. Bill More Hours.</title>
+    <meta name="description" content="Professional legal tech SaaS platform for modern law firms. Case management, billing, document automation, and client portal solutions.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span class="webinar-text">
+                        <i class="fas fa-calendar-alt me-2"></i>
+                        Webinar: AI in Legal Practice - May 20
+                    </span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="client-login">Client Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-balance-scale me-2"></i>
+                    PrecisionLaw
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#solutions">Solutions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#integrations">Integrations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#demo">Demo</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-75">
+                <div class="col-lg-6">
+                    <h1 class="hero-title">Streamline Your Practice.<br>Bill More Hours.</h1>
+                    <p class="hero-subtitle">Transform your law firm with our comprehensive legal tech platform. Manage cases, automate billing, and deliver exceptional client experiences.</p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-lg me-3" data-bs-toggle="modal" data-bs-target="#demoModal">
+                            Request a Demo
+                        </button>
+                        <button class="btn btn-outline-light btn-lg">
+                            Watch Video
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dashboard-mockup">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-sidebar">
+                                <div class="sidebar-item active">Dashboard</div>
+                                <div class="sidebar-item">Cases</div>
+                                <div class="sidebar-item">Billing</div>
+                                <div class="sidebar-item">Documents</div>
+                                <div class="sidebar-item">Clients</div>
+                            </div>
+                            <div class="mockup-main">
+                                <div class="mockup-chart"></div>
+                                <div class="mockup-stats">
+                                    <div class="stat-item">
+                                        <div class="stat-number">247</div>
+                                        <div class="stat-label">Active Cases</div>
+                                    </div>
+                                    <div class="stat-item">
+                                        <div class="stat-number">$89,450</div>
+                                        <div class="stat-label">This Month</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos -->
+    <section class="client-logos">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <p class="text-center mb-4 text-muted">Trusted by leading law firms nationwide</p>
+                    <div class="logos-container">
+                        <div class="logo-item">Smith & Associates</div>
+                        <div class="logo-item">Johnson Legal Group</div>
+                        <div class="logo-item">Williams Law Firm</div>
+                        <div class="logo-item">Brown & Partners</div>
+                        <div class="logo-item">Davis Legal</div>
+                        <div class="logo-item">Miller & Co.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="solutions" class="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Comprehensive Legal Solutions</h2>
+                    <p class="section-subtitle">Everything you need to run a modern law practice</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul class="nav nav-tabs feature-tabs" id="featureTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="case-management-tab" data-bs-toggle="tab" data-bs-target="#case-management" type="button" role="tab">
+                                <i class="fas fa-folder-open me-2"></i>
+                                Case Management
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab">
+                                <i class="fas fa-dollar-sign me-2"></i>
+                                Billing & Invoicing
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab">
+                                <i class="fas fa-file-alt me-2"></i>
+                                Document Automation
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="client-portal-tab" data-bs-toggle="tab" data-bs-target="#client-portal" type="button" role="tab">
+                                <i class="fas fa-users me-2"></i>
+                                Client Portal
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content feature-content" id="featureTabsContent">
+                        <div class="tab-pane fade show active" id="case-management" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h3>Intelligent Case Management</h3>
+                                    <p>Organize, track, and manage your cases with our intuitive platform. Get real-time updates, deadline alerts, and comprehensive case histories.</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Automated deadline tracking</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Document organization</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Team collaboration tools</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Client communication logs</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="feature-image">
+                                        <i class="fas fa-folder-open"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="billing" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h3>Automated Billing & Invoicing</h3>
+                                    <p>Streamline your billing process with automated time tracking, invoice generation, and payment processing.</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Time tracking integration</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Automated invoice generation</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Payment processing</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Financial reporting</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="feature-image">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="documents" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h3>Document Automation</h3>
+                                    <p>Create, manage, and automate legal documents with our powerful template system and AI-powered suggestions.</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Template library</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>AI-powered suggestions</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Version control</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Electronic signatures</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="feature-image">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="client-portal" role="tabpanel">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <h3>Secure Client Portal</h3>
+                                    <p>Provide your clients with secure access to their case information, documents, and billing details.</p>
+                                    <ul class="feature-list">
+                                        <li><i class="fas fa-check text-primary me-2"></i>Secure document sharing</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Real-time case updates</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Billing transparency</li>
+                                        <li><i class="fas fa-check text-primary me-2"></i>Communication tools</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="feature-image">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & Compliance -->
+    <section class="security">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Security & Compliance</h2>
+                    <p class="section-subtitle">Your data security is our top priority</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Bank-Level Encryption</h4>
+                        <p>All data is encrypted using AES-256 encryption, the same standard used by banks and government agencies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h4>Bar Association Compliant</h4>
+                        <p>Fully compliant with all major bar association requirements and legal industry standards.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="security-card">
+                        <div class="security-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4>Confidentiality Guaranteed</h4>
+                        <p>Strict confidentiality protocols ensure your client information remains secure and private.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">What Our Clients Say</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"PrecisionLaw has transformed how we manage our practice. We've increased our billable hours by 30% while reducing administrative overhead."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Sarah Mitchell</h5>
+                                <span>Managing Partner, Mitchell & Associates</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"The document automation features alone have saved us countless hours. Our clients love the transparency of the client portal."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Robert Chen</h5>
+                                <span>Senior Associate, Chen Legal Group</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <p>"Finally, a legal tech solution that actually understands the needs of modern law firms. The security features give us complete peace of mind."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-info">
+                                <h5>Jennifer Williams</h5>
+                                <span>Partner, Williams & Partners</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-title">Ready to Transform Your Practice?</h2>
+                    <p class="cta-subtitle">Schedule your personalized demo and see how PrecisionLaw can revolutionize your law firm</p>
+                    <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#demoModal">
+                        Schedule Your Personalized Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <h5>Solutions</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Case Management</a></li>
+                        <li><a href="#">Billing & Invoicing</a></li>
+                        <li><a href="#">Document Automation</a></li>
+                        <li><a href="#">Client Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Training Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <h5>Contact</h5>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone me-2"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope me-2"></i> info@precisionlaw.com</p>
+                        <p><i class="fas fa-map-marker-alt me-2"></i> 123 Legal Street, Suite 100<br>New York, NY 10001</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 PrecisionLaw. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="trust-badges">
+                        <span class="badge me-2">SOC 2 Certified</span>
+                        <span class="badge me-2">HIPAA Compliant</span>
+                        <span class="badge">ISO 27001</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Bar -->
+    <div class="bottom-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 PrecisionLaw. Developed by <a href="https://RiverTheme.com" target="_blank" rel="noopener noreferrer">RiverTheme</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Modal -->
+    <div class="modal fade" id="demoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schedule Your Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label">Phone</label>
+                                <input type="tel" class="form-control" id="phone">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="firmName" class="form-label">Firm Name</label>
+                            <input type="text" class="form-control" id="firmName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="firmSize" class="form-label">Firm Size</label>
+                            <select class="form-select" id="firmSize">
+                                <option>1-5 attorneys</option>
+                                <option>6-20 attorneys</option>
+                                <option>21-50 attorneys</option>
+                                <option>50+ attorneys</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="preferredDate" class="form-label">Preferred Demo Date</label>
+                            <input type="date" class="form-control" id="preferredDate">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Additional Information</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary">Schedule Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
